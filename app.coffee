@@ -21,14 +21,7 @@ module.exports = (initFn)->
         app.use(express.cookieParser())
         module.exports.static_route = path.join __dirname, 'public'
         app.use(express.static(path.join(__dirname, 'public')))
-        app.set('views', __dirname + '/public/views')
         app.use(app.router)
-
-        # use hogan express
-        app.set 'view engine', 'html'
-        app.engine 'html', require('hogan-express')
-        app.set('layout', 'layout')
-        app.set('partials', head: "head")
 
 
     #Init Routes

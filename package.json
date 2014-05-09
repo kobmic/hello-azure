@@ -10,7 +10,7 @@
     "dependencies":{
         "coffee-script":"*",
         "async":"*",
-        "express":"*",
+        "express": "3.4.8",
         "mongoose": "*",
         "underscore": "*"
     },
